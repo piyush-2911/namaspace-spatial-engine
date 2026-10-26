@@ -1,0 +1,16 @@
+{
+  "id": "YOUR_KAGGLE_USERNAME/namas-gaussian-splat-training",
+  "title": "Namas Gaussian Splat Training",
+  "code_file": "namas-train.ipynb",
+  "language": "python",
+  "kernel_type": "notebook",
+  "is_private": true,
+  "enable_gpu": true,
+  "enable_tpu": false,
+  "enable_internet": true,
+  "dataset_sources": [],
+  "kernel_sources": [
+    "YOUR_KAGGLE_USERNAME/namas"
+  ],
+  "competition_sources": []
+}

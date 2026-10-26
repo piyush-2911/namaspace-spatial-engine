@@ -1,0 +1,19 @@
+{
+  "id": "YOUR_KAGGLE_USERNAME/namas",
+  "id_no": 138881869,
+  "title": "namas",
+  "code_file": "namas.ipynb",
+  "language": "python",
+  "kernel_type": "notebook",
+  "is_private": true,
+  "enable_gpu": true,
+  "enable_tpu": false,
+  "enable_internet": true,
+  "keywords": [],
+  "dataset_sources": [
+    "YOUR_KAGGLE_USERNAME/namaspace2"
+  ],
+  "kernel_sources": [],
+  "competition_sources": [],
+  "model_sources": []
+}

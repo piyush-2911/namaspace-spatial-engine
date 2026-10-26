@@ -1,0 +1,22 @@
+{
+  "version": "4.2.1",
+  "has_cuda": true,
+  "extraction_seconds": 9.537830591201782,
+  "matching_seconds": 283.64527010917664,
+  "mapping_seconds": 284.44680070877075,
+  "models": [
+    {
+      "id": 0,
+      "registered_images": 3,
+      "points3D": 8,
+      "mean_reprojection_error": 0.11863829241657743
+    },
+    {
+      "id": 1,
+      "registered_images": 370,
+      "points3D": 78036,
+      "mean_reprojection_error": 0.7130403647746942
+    }
+  ],
+  "largest_model_registration_fraction": 1.0
+}

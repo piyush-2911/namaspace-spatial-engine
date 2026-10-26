@@ -1,0 +1,14 @@
+node_modules/
+__pycache__/
+.env
+.env.*
+!.env.example
+kaggle.json
+.openai/
+*.pt
+*.ply
+*.splat
+*.mp4
+*.tar.gz
+outputs/
+*.log

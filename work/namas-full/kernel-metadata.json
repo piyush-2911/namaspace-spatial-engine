@@ -1,0 +1,16 @@
+{
+  "id": "YOUR_KAGGLE_USERNAME/namas-full-quality",
+  "title": "Namas Full Quality",
+  "code_file": "namas-full.ipynb",
+  "language": "python",
+  "kernel_type": "notebook",
+  "is_private": true,
+  "enable_gpu": true,
+  "enable_tpu": false,
+  "enable_internet": true,
+  "dataset_sources": [
+    "YOUR_KAGGLE_USERNAME/namaspace2"
+  ],
+  "kernel_sources": [],
+  "competition_sources": []
+}

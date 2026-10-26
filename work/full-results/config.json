@@ -1,0 +1,14 @@
+{
+  "steps": 10000,
+  "width": 1280,
+  "height": 720,
+  "train_images": 323,
+  "held_out_images": 47,
+  "seed": 42,
+  "torch": "2.11.0+cu128",
+  "cuda": "12.8",
+  "gpu": "Tesla T4",
+  "scene_scale": 5.660696506500244,
+  "gsplat": "1.5.3",
+  "evaluation_note": "Views held out of photometric training; COLMAP poses and seed geometry used all registered images."
+}
