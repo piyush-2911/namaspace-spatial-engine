@@ -12,3 +12,4 @@ kaggle.json
 *.tar.gz
 outputs/
 *.log
+viewer/dist/living/

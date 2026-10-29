@@ -30,6 +30,11 @@ window.addEventListener('blur',()=>drag=null);
 $('reset').onclick=()=>selectView(0);$('help').onclick=()=>{keys.clear();$('help-dialog').showModal();};$('close-help').onclick=()=>$('help-dialog').close();
 $('fullscreen').onclick=async()=>{try{if(document.fullscreenElement)await document.exitFullscreen();else await document.documentElement.requestFullscreen();}catch{$('hint').textContent='Fullscreen is unavailable in this browser.';}};
 $('retry').onclick=()=>location.reload();
+const selectedScene=new URLSearchParams(location.search).get('scene')==='living'?'living':'meeting';
+document.querySelectorAll('[data-scene]').forEach(link=>{
+  if(link.dataset.scene===selectedScene)link.setAttribute('aria-current','page');
+  link.addEventListener('click',()=>keys.clear());
+});
 function tick(time){
   requestAnimationFrame(tick);
   const dt=Math.min((time-lastTime)/1000,.05);lastTime=time;
@@ -46,7 +51,11 @@ function tick(time){
 }
 async function init(){
   try{
-    const response=await fetch('./scene.json');if(!response.ok)throw Error('Scene configuration could not be loaded.');config=await response.json();
+    const scenePath=selectedScene==='living'?'./living/scene.json':'./scene.json';
+    const response=await fetch(scenePath);if(!response.ok)throw Error('Scene configuration could not be loaded.');config=await response.json();
+    if(config.title)document.querySelector('h1').textContent=config.title;
+    if(config.captureLabel)document.querySelector('.tags span').textContent=config.captureLabel;
+    if(config.note)document.querySelector('.scene-card .note').textContent=config.note;
     worldUp.fromArray(config.up).normalize();
     config.views.forEach((v,i)=>{const b=document.createElement('button');b.disabled=true;b.innerHTML=`<span>${v.label}</span><span class="num">0${i+1} ↗</span>`;b.onclick=()=>selectView(i);$('views').appendChild(b);});
     camera=new THREE.PerspectiveCamera(config.fov,innerWidth/innerHeight,.01,1000);
