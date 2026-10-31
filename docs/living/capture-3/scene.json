@@ -1,0 +1,75 @@
+{
+  "name": "Living room",
+  "title": "Your living room.",
+  "captureLabel": "Own capture",
+  "note": "Smartphone capture reconstructed with 3D Gaussian Splatting. Some blur and incomplete surfaces remain.",
+  "bytes": 24640800,
+  "parts": [
+    "living/capture-3/room-0.bin",
+    "living/capture-3/room-1.bin",
+    "living/capture-3/room-2.bin"
+  ],
+  "gaussians": 770025,
+  "up": [
+    0.023642797473600406,
+    -0.9890945263570008,
+    -0.14537206078969403
+  ],
+  "views": [
+    {
+      "label": "Room overview",
+      "position": [
+        2.9131241297032258,
+        0.4357728039395886,
+        -2.624156381230684
+      ],
+      "target": [
+        2.933546111514749,
+        0.8530460273397046,
+        -3.532707954984041
+      ]
+    },
+    {
+      "label": "Sofa view",
+      "position": [
+        -0.6905461218559678,
+        -0.4565568910363577,
+        4.237446572967039
+      ],
+      "target": [
+        -0.48937616910576176,
+        -0.1636681304696463,
+        3.302702334113585
+      ]
+    },
+    {
+      "label": "TV wall",
+      "position": [
+        -3.9819002128976018,
+        0.02880125310468738,
+        -1.368159914786892
+      ],
+      "target": [
+        -3.9098288245337636,
+        -0.031240450179099395,
+        -0.372569287593441
+      ]
+    },
+    {
+      "label": "Across the room",
+      "position": [
+        1.4747077493946763,
+        0.39274364469231576,
+        -3.9277629349763337
+      ],
+      "target": [
+        0.4826519756596299,
+        0.45577288923443765,
+        -3.8188933004076424
+      ]
+    }
+  ],
+  "fov": 52.65999357822506,
+  "movementScale": 0.9767718919002781,
+  "sha256": "9350e5b42c6ec90f3ad213359768cddab3b8e590daeffba285e7974d06eeca6b"
+}
