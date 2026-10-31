@@ -51,7 +51,7 @@ function tick(time){
 }
 async function init(){
   try{
-    const scenePath=selectedScene==='living'?'./living/capture-3/scene.json?v=overview-2':'./scene.json';
+    const scenePath=selectedScene==='living'?'./living/capture-3/scene.json?v=views-3':'./scene.json';
     const response=await fetch(scenePath);if(!response.ok)throw Error('Scene configuration could not be loaded.');config=await response.json();
     if(config.title)document.querySelector('h1').textContent=config.title;
     if(config.captureLabel)document.querySelector('.tags span').textContent=config.captureLabel;
