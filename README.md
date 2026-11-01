@@ -7,7 +7,7 @@ Indoor video reconstruction and a browser-based Gaussian splat viewer for the Na
 Python 3 is sufficient to serve the included static viewer:
 
 ```sh
-python -m http.server 8766 --bind 127.0.0.1 --directory viewer/dist
+python -m http.server 8766 --bind 127.0.0.1 --directory docs
 ```
 
 Open http://127.0.0.1:8766/ and wait for the approximately 26 MB scene to load. Click inside the room, drag to look, and use WASD or arrows to move. Q/E changes height, Shift boosts speed, Escape stops input, and R resets the view. Buttons provide saved viewpoints, fullscreen, and movement speed. Touch movement controls appear on narrow screens.
@@ -15,6 +15,10 @@ Open http://127.0.0.1:8766/ and wait for the approximately 26 MB scene to load. 
 Public viewer: https://piyush-2911.github.io/namaspace-spatial-engine/
 
 GitHub Pages serves `docs/` from `main`. This directory contains the viewer and approved compact models; raw footage and credentials are excluded. Update `docs/` when publishing viewer changes.
+
+## Reconstruct the model and inspect sample data
+
+Follow [RECONSTRUCTION.md](RECONSTRUCTION.md) for the Kaggle setup, input requirements, output files and local model packaging. Real benchmark input frames are included in [test/](test/README.md). The submitted smartphone notebook is [work/namas-living/livingroom.ipynb](work/namas-living/livingroom.ipynb). Raw home recordings are not public.
 
 ## Repository contents
 
@@ -26,15 +30,6 @@ GitHub Pages serves `docs/` from `main`. This directory contains the viewer and 
 - `work/build_*.py`: notebook generation scripts; earlier pilot notebooks are retained for reference.
 - `work/prepare_model.py`: converts trained PLY output to the compact base-colour splat format.
 - `work/full-results/`: camera poses and small evaluation reports.
-
-## Reproduce or replace the capture
-
-1. Supply a video dataset to the full Kaggle notebook. Update `kernel-metadata.json` IDs and dataset references for your own Kaggle account. References use account placeholders; supply your own private dataset.
-2. Run reconstruction and training on Kaggle. Download the generated PLY/checkpoint and camera export using your own authenticated Kaggle CLI or notebook output UI.
-3. Put the PLY at `outputs/full-quality/meetingroom.ply`, run `python work/prepare_model.py full-quality`, and put matching cameras at `work/full-results/cameras.json`.
-4. Run `npm ci` inside `viewer/`, then `python viewer/prepare_assets.py` from the repository root. Update scene labels and viewpoints for a different capture.
-
-Local Kaggle helper scripts use example notebook slugs. Change those references when using another account. Keep Kaggle credentials outside the repository.
 
 ## Current results and limitations
 

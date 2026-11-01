@@ -13,3 +13,5 @@ kaggle.json
 outputs/
 *.log
 viewer/dist/living/
+
+preview-dist/

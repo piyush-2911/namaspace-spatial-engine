@@ -1,0 +1,16 @@
+{
+  "id": "YOUR_KAGGLE_USERNAME/namas-living-room",
+  "title": "Namas Living Room 3",
+  "code_file": "livingroom.ipynb",
+  "language": "python",
+  "kernel_type": "notebook",
+  "is_private": true,
+  "enable_gpu": true,
+  "enable_tpu": false,
+  "enable_internet": true,
+  "dataset_sources": [
+    "YOUR_KAGGLE_USERNAME/YOUR_PRIVATE_DATASET"
+  ],
+  "kernel_sources": [],
+  "competition_sources": []
+}
