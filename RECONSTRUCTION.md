@@ -10,7 +10,7 @@ python -m http.server 8766 --bind 127.0.0.1 --directory docs
 
 Open http://127.0.0.1:8766/. `docs/` includes both approved models. The older `viewer/dist/` directory contains the benchmark model only.
 
-The `test/meetingroom/images/` directory contains 24 real input frames from the public Tanks and Temples Meetingroom video. These are a small input-format/feature-matching sample, not the complete training set. See `test/README.md` for attribution, timestamps, checksums and validation.
+No raw video or extracted input frames are bundled. See `test/README.md` for official download links and local input setup.
 
 ## 2. Prepare the reconstruction input
 
@@ -70,4 +70,4 @@ This command does not publish anything. The deployed site serves `docs/` on `mai
 
 The submitted 20k smartphone run completed with 198/220 registered frames and 770,025 Gaussians. A separate 30k continuation brought only a small metric improvement and is not the deployed model. These historical results are not a guarantee for new footage.
 
-The repository's sample checks verify file integrity and decoding. They do not constitute a fresh GPU reconstruction test. The viewer supports free flight, not collision avoidance. POI search, optimal path planning and AR remain future work.
+Input frames are no longer bundled; this documentation does not claim a fresh GPU reconstruction test. The viewer supports free flight, not collision avoidance. POI search, optimal path planning and AR remain future work.

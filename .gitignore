@@ -15,3 +15,6 @@ outputs/
 viewer/dist/living/
 
 preview-dist/
+
+# Keep source benchmark frames local
+test/meetingroom/

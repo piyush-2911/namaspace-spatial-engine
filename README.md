@@ -18,7 +18,7 @@ GitHub Pages serves `docs/` from `main`. This directory contains the viewer and 
 
 ## Reconstruct the model and inspect sample data
 
-Follow [RECONSTRUCTION.md](RECONSTRUCTION.md) for the Kaggle setup, input requirements, output files and local model packaging. Real benchmark input frames are included in [test/](test/README.md). The submitted smartphone notebook is [work/namas-living/livingroom.ipynb](work/namas-living/livingroom.ipynb). Raw home recordings are not public.
+Follow [RECONSTRUCTION.md](RECONSTRUCTION.md) for the Kaggle setup, input requirements, output files and local model packaging. [test/](test/README.md) explains how to obtain input data locally; source frames are not bundled. The submitted smartphone notebook is [work/namas-living/livingroom.ipynb](work/namas-living/livingroom.ipynb). Raw home recordings are not public.
 
 ## Repository contents
 
