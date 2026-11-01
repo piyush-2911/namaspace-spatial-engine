@@ -1,5 +1,13 @@
 NamaSpace prototype
-Dataset: Tanks and Temples Meetingroom, https://www.tanksandtemples.org/download/ (non-commercial use; review dataset license before other uses).
+Dataset: Tanks and Temples - Meetingroom.
+Creators: Arno Knapitsch, Jaesik Park, Qian-Yi Zhou and Vladlen Koltun (2017).
+Source: https://www.tanksandtemples.org/download/
+License: Creative Commons Attribution 4.0 International (CC BY 4.0), as stated in the Copyright section of https://www.tanksandtemples.org/license/
+License link: https://creativecommons.org/licenses/by/4.0/
+Changes by NamaSpace: extracted and resized video frames; estimated camera poses and sparse geometry with COLMAP; trained a Gaussian Splatting reconstruction; exported a compact base-colour model and split it into browser assets. Test data is a resized 24-frame subset with embedded metadata removed.
+The dataset authors do not endorse or sponsor this project. Source data and derived benchmark assets retain the applicable attribution and license notices; no additional restrictions are imposed by NamaSpace.
+The source license page also contains conflicting restrictions; this attribution relies on its express CC BY 4.0 statement and does not resolve that inconsistency.
+Living-room scene: project owner's smartphone capture, not Tanks and Temples data.
 Training: gsplat 1.5.3 (Apache-2.0), https://github.com/nerfstudio-project/gsplat
 The compact viewer model retains base colour only.
 

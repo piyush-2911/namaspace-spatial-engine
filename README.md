@@ -39,7 +39,9 @@ The viewer supports free flight, not collision-aware walking. Chair geometry and
 
 ## Attribution
 
-Sample: [Tanks and Temples](https://www.tanksandtemples.org/download/) (non-commercial dataset terms apply). Rendering: [GaussianSplats3D](https://github.com/mkkellogg/GaussianSplats3D) and [Three.js](https://github.com/mrdoob/three.js). Training: [gsplat](https://github.com/nerfstudio-project/gsplat). See `viewer/dist/credits.txt` for bundled dependency licenses. This repository does not grant additional rights to the dataset or dependencies.
+Meetingroom benchmark: [Tanks and Temples](https://www.tanksandtemples.org/download/), Arno Knapitsch, Jaesik Park, Qian-Yi Zhou and Vladlen Koltun (2017). The official Copyright section identifies the data as [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). We extracted/resized frames, estimated cameras and geometry, and generated a compact Gaussian Splatting reconstruction. No endorsement by the authors is implied. The [source license page](https://www.tanksandtemples.org/license/) contains conflicting restrictions; we rely on its express CC BY 4.0 statement. See [full credits](docs/credits.txt).
+
+ Rendering: [GaussianSplats3D](https://github.com/mkkellogg/GaussianSplats3D) and [Three.js](https://github.com/mrdoob/three.js). Training: [gsplat](https://github.com/nerfstudio-project/gsplat). See `viewer/dist/credits.txt` for bundled dependency licenses. This repository does not grant additional rights to the dataset or dependencies.
 
 Raw videos, full PLYs, checkpoints, local credentials, and hosting metadata are excluded. Compact benchmark and approved living-room assets are included for public viewing.
 
