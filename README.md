@@ -2,6 +2,10 @@
 
 Indoor video reconstruction and a browser-based Gaussian splat viewer for the Namma Space competition. Includes the Tanks and Temples Meetingroom benchmark and an approved smartphone living-room reconstruction. The meeting room is the default scene.
 
+## Round 2 team plan
+
+Download the [Round 2 team plan and submission checklist](documentation/Namma_Space_Round_2_Team_Plan.docx) for detailed capture, reconstruction, POI search, navigation, testing, and submission tasks, with suggested owners and milestones. The five-page plan distinguishes competition requirements from proposed implementation choices. It is a planning document, not a claim that these features are already implemented.
+
 ## Run the viewer locally
 
 Python 3 is sufficient to serve the included static viewer:
